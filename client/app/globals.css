@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #efefef;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border: 1px solid #171717;
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .formStyles {
+    @apply flex flex-col justify-around items-center gap-5 mx-auto border border-black px-8 py-6;
+  }
+}
